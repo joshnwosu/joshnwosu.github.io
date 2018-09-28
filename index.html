@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Lato'
+    }
+
+    .loader-page {
+      background-color: #333;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: all .5s ease-out;
+    }
+    .loader-container {
+      /* border: 1px solid steelblue; */
+      width: 600px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .loader {
+      width: 500px;
+      height: 5px;
+      background-color: rgba(0,0,0,0.3);
+      position: relative;
+    }
+    .loader-fill {
+      background-color: steelblue;
+      width: 30px;
+      height: 100%;
+      position: absolute;
+    }
+    .loader-counter {
+      position: absolute;
+      font-size: 5rem;
+      font-family: 'Lato' ;
+      font-weight: 300;
+      letter-spacing: -5px;
+      color: steelblue;
+      z-index: 9;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 3rem;
+    }
+    header {
+      background-image: url('img/header.jpg');
+      width: 100%;
+      height: 500px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      position: absolute;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-page">
+    <div class="loader-container">
+      <div class="loader-counter">
+        <p>1%</p>
+      </div>
+      <div class="loader">
+        <div class="loader-fill"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <header>
+    <div class="overlay"></div>
+    <h1>Hi, I am Joshua. I coded this :)</h1>
+  </header>
+
+
+  <script>
+    window.onload = loader;
+
+    function loader() {
+      let loaderPage = document.querySelector('.loader-page');
+      let counter = document.querySelector('.loader-counter');
+      let fill = document.querySelector('.loader-fill');
+
+      let amount = 10;
+      let interval = setInterval(loop, 50);
+      function loop() {
+        if (amount >= 100) {
+          clearInterval(interval);
+          loaderPage.style.visibility = 'hidden';
+          loaderPage.style.opacity = '0'
+        }else {
+          amount++;
+          fill.style.width = amount + '%';
+          counter.textContent = amount * 1 + '%';
+        }
+      }
+    }
+  </script>
+</body>
+</html>
