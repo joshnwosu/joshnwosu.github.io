@@ -447,6 +447,7 @@ body {
   background-color: #555;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   z-index: -2;
+  left: 0;
   transform: rotate(-7deg)
 }
 .about-img .stack::after {
@@ -458,6 +459,7 @@ body {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
   z-index: -1;
   top: 0;
+  left: 0;
   transform: rotate(7deg)
 }
 
