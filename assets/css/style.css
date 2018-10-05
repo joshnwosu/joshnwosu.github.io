@@ -101,8 +101,8 @@ body {
   position: fixed;
   background-color: #fff;
   z-index: 4;
-  left: 0;
-  top: -200%;
+  left: -200%;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,7 +111,7 @@ body {
 }
 
 .slide-down {
-  top: 0;
+  left: 0;
 }
 
 .slide-menu .links {
