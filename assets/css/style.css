@@ -163,7 +163,7 @@ body {
 
 .social-links {
   position: absolute;
-  bottom: 0;
+  top: 75px;
   width:  100%;
   text-align: right;
   padding: 20px;
