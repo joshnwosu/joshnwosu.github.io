@@ -6,7 +6,11 @@ $(function() {
     $('.slide-menu > .social-links').toggleClass('social-anim');
   });
   
-  // waypoint
+  // slide-menu a
+
+  $('.slide-menu a').on('click', function() {
+    $('.slide-menu').removeClass('slide-down');
+  })
   
 });
 
