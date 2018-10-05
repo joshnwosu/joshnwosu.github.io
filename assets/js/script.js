@@ -10,6 +10,7 @@ $(function() {
 
   $('.slide-menu a').on('click', function() {
     $('.slide-menu').removeClass('slide-down');
+    $('.burger').removeClass('burger-anim');
   })
   
 });
