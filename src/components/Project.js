@@ -30,7 +30,7 @@ const Project = () => {
               <h1>Mint Player.</h1>
               <p>
                 Mint is multi platform music player application Lorem, ipsum
-                dolor sit amet consectetur adipisicing elit. Itaque, id!
+                dolor sit amet consectetur adipisicing elit. Itaque, idas!
               </p>
               <a href='/#' className='link-btn'>
                 Explore
