@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 100px auto;
+  max-width: 1100px;
+}
+
+.brand-wrap {
+  background: #fff;
+  margin-top: -75px;
+  border-radius: 100px;
+  padding: 64px 14px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 20px 50px rgba(153, 153, 153, 0.2);
+  border: 1px solid rgba(214, 214, 214, 0.11);
+}
+@media (max-width: 991px) {
+  .brand-wrap {
+    padding: 40px 0;
+    margin-top: -52px;
+  }
+}
+.brand-wrap .owl-carousel .owl-item img {
+  width: auto !important;
+}
+.brand-wrap .single-brand {
+  text-align: center;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.brand-wrap .single-brand:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.rounded-circle {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
