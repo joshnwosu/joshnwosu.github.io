@@ -17,7 +17,7 @@ const Info = () => {
 
               <div className='desc'>
                 <p>
-                  Software engineer based in Lagos, Nigeria who loves to create
+                  I'm a software engineer based in Lagos, NG who loves to create
                   attractive experience for the web. Working as a developer
                   since 2014 and had the opportunity to work and collaborate
                   with different teams and companies.

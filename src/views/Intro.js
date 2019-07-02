@@ -22,7 +22,7 @@ const Intro = () => {
     <div>
       <Header />
       <Info />
-      <Skills />
+      {/* <Skills /> */}
       <About />
       <Project />
       <Contact />

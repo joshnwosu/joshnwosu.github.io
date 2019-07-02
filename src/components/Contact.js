@@ -6,7 +6,7 @@ const Contact = () => {
       <div className='dark-bg'>
         <div className='wrapper'>
           <div className='flex-wrapper contact'>
-            <h1>Contact Me</h1>
+            <h1>Get In Touch</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
               illum eveniet eius nobis dolorem accusantium explicabo numquam

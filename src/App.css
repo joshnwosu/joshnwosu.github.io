@@ -9,12 +9,15 @@
 }
 
 :root {
-  --BG-color: #212121;
-  --dark-bg: #191919;
-  --font-color: #fff;
-  --red: rgb(247, 84, 84);
+  --BG-color: #151515;
+  /* --BG-color: #192222; */
+  /* --dark-bg: #182020; */
+  --dark-bg: #111111;
+  --font-color: #bbb;
+  /* --red: rgb(235, 85, 85); */
+  --red: springgreen;
   --blend: rgba(0, 0, 0, 0.1);
-  --icon-color: #999;
+  --icon-color: #eee;
 }
 
 ::-webkit-scrollbar {
@@ -204,7 +207,7 @@ span.line {
 
 .resume {
   margin: 1em 0;
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
 .resume a {
@@ -223,6 +226,10 @@ span.line {
   .desc {
     width: 100%;
     padding: 1em;
+  }
+
+  .resume {
+    margin-left: 1em;
   }
 }
 
@@ -337,59 +344,96 @@ span.line {
 .about-cover,
 .about-text {
   padding: 0 1em;
-  margin-top: 2em;
+  /* margin-top: 2em; */
   position: relative;
   z-index: 2;
 }
 
 .about-cover {
-  padding: 0;
-  width: 200px;
-  height: 200px;
-  border: 2px solid var(--red);
+  width: 40%;
+  padding: 0.2em;
+  /* width: 200px; */
+  height: 300px;
+  /* border: 2px solid var(--red); */
   border-radius: 3px;
   transition: 300ms linear;
 }
 
+.about-cover::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  border: 3px solid var(--red);
+  margin-top: 15px;
+  margin-left: 25px;
+  border-radius: 3px;
+  transition: 300ms linear;
+}
+
+.about-cover:hover::before {
+  transform: rotate(90deg);
+  border-style: dashed;
+  margin-top: 0;
+  margin-left: 0;
+}
+
 .about-text {
-  width: calc(100% - 300px);
+  width: 60%;
+  /* width: calc(100% - 300px); */
   padding: 2em 0 2em 3em;
 }
 
 .about-cover img {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 100%;
   object-fit: cover;
   object-position: top center;
   filter: grayscale(1);
-  position: absolute;
-  top: 20px;
-  right: 20px;
   transition: 300ms linear;
-}
-
-.about-cover:hover {
-  box-shadow: 0 0 0 20px var(--blend);
-  border: 0 solid var(--red);
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .about-cover:hover img {
-  top: 0;
-  right: 0;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+.about-skill p {
+  margin-top: 1em;
+  font-size: 14px;
+  line-height: 1.89em;
+  word-spacing: 2px;
+}
+
+.about-skill ul {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-skill ul li {
+  width: 50%;
+  font-size: 14px;
+  margin: 0.5em 0;
+  position: relative;
+  padding-left: 20px;
+  word-break: break-all;
+}
+
+.about-skill ul li::before {
+  width: 5px;
+  height: 2px;
+  position: absolute;
+  content: '';
+  background-color: var(--red);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .about-text h1 {
   font-size: 2em;
-}
-
-.about-text p {
-  /* border: 1px solid red; */
-  width: 500px;
-  font-size: 16px;
-  line-height: 1.89em;
-  margin-left: 50px;
-  margin-top: 1em;
 }
 
 @media (max-width: 800px) {
@@ -397,6 +441,10 @@ span.line {
     flex-direction: column;
   }
   .about-cover {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 2em;
   }
   .about-text {
@@ -435,10 +483,14 @@ span.line {
 .project section .project-img {
   width: 60%;
   height: 400px;
-  background-color: var(--blend);
+  background-color: var(--BG-color);
+  /* background-color: rgb(25, 34, 34, 0.5); */
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 50px 0 rgba(25, 34, 34, 0.5);
+  box-shadow: 0 0px 50px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
 .project-img img {
@@ -567,18 +619,19 @@ span.line {
 }
 
 .contact .contact-line p {
-  font-size: 1.3em;
+  font-size: 14px;
   color: var(--red);
 }
 
 .contact a.hire-me-btn {
   margin-top: 2em;
   border: 2px solid var(--red);
-  background-color: var(--red);
+  /* background-color: var(--red); */
   border-radius: 30px;
-  padding: 0.5em 3em;
+  padding: 0.5em 5em;
   color: var(--font-color);
-  font-weight: bold;
+  font-size: 14px;
+  /* font-weight: bold; */
   box-shadow: 0 0 0 5px var(--blend);
   transition: 300ms linear;
 }
@@ -610,14 +663,11 @@ span.line {
     flex-direction: column;
     font-size: 12px;
   }
-  .contact a.hire-me-btn {
+  /* .contact a.hire-me-btn {
     margin-top: 2em;
-    border: 2px solid var(--red);
-    background-color: var(--red);
-    border-radius: 30px;
     padding: 0.2em 2em;
     color: var(--font-color);
-  }
+  } */
 }
 
 /***************************
