@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: 'Alegreya', 'Lato', sans-serif;
+  font-family: 'Alegreya', sans-serif;
   font-size: 100%;
   font-weight: normal;
   color: var(--font-color);
@@ -232,12 +232,12 @@ span.line {
 
 .skills {
   padding: 0 1em;
+  margin: 5em 0;
 }
 
 .skills .sliders {
   display: flex;
   align-items: center;
-  margin-top: 1em;
 }
 
 .skills .item {
@@ -316,6 +316,12 @@ span.line {
 .skills .owl-next,
 .skills .owl-prev {
   display: none;
+}
+
+@media (max-width: 800px) {
+  .skills {
+    margin: 2em 0;
+  }
 }
 
 /***************************
