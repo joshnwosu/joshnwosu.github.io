@@ -25,7 +25,9 @@ const Info = () => {
               </div>
 
               <div className='resume link-btn'>
-                <a href='#/'>Resume.</a>
+                <a href="./assets/Joshua's_resume.pdf" target='_blank'>
+                  Resume.
+                </a>
               </div>
             </div>
           </div>
