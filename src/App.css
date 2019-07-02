@@ -342,19 +342,41 @@ span.line {
   z-index: 2;
 }
 
-.about-cover img {
+.about-cover {
+  padding: 0;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top center;
-  filter: grayscale(1);
-  box-shadow: 0 0 0 20px var(--blend);
+  border: 2px solid var(--red);
+  border-radius: 3px;
+  transition: 300ms linear;
 }
 
 .about-text {
-  width: 100%;
-  padding: 2em 0 2em 2em;
+  width: calc(100% - 300px);
+  padding: 2em 0 2em 3em;
+}
+
+.about-cover img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  filter: grayscale(1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: 300ms linear;
+}
+
+.about-cover:hover {
+  box-shadow: 0 0 0 20px var(--blend);
+  border: 0 solid var(--red);
+  border-radius: 0;
+}
+
+.about-cover:hover img {
+  top: 0;
+  right: 0;
 }
 
 .about-text h1 {
