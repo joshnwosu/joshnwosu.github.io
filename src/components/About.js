@@ -18,9 +18,9 @@ const About = () => {
           </div>
           <div className='about-text'>
             <h1>
-              <span>Hi there,</span>
+              Hi there,
               <br />
-              <span>I'm Joshua Nwosu.</span>
+              I'm Joshua Nwosu.
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

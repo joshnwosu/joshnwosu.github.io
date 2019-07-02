@@ -11,7 +11,7 @@
 :root {
   --BG-color: #212121;
   --dark-bg: #191919;
-  --font-color: #ddd;
+  --font-color: #fff;
   --red: rgb(247, 84, 84);
   --blend: rgba(0, 0, 0, 0.1);
   --icon-color: #999;
@@ -357,19 +357,15 @@ span.line {
   padding: 2em 0 2em 2em;
 }
 
-.about-text h1 span:first-child {
-  font-size: 1.5em;
-}
-
-.about-text h1 span:last-child {
-  font-size: 0.7em !important;
-  color: var(--red);
-  margin-left: 1em;
+.about-text h1 {
+  font-size: 2em;
 }
 
 .about-text p {
+  /* border: 1px solid red; */
+  width: 500px;
   font-size: 16px;
-  line-height: 1.7em;
+  line-height: 1.89em;
   margin-left: 50px;
   margin-top: 1em;
 }
@@ -432,7 +428,7 @@ span.line {
   font-size: 3em;
   margin-bottom: 0.5em;
   margin-left: -100px;
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .project section .project-desc p {
