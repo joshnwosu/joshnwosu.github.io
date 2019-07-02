@@ -34,7 +34,7 @@ const Skills = () => {
           {/* <div className='blend'>
             <h1>Skills & Technologies</h1>
           </div> */}
-          <OwlCarousel className='sliders' {...options.options}>
+          {/* <OwlCarousel className='sliders' {...options.options}>
             <div className='item'>
               <img src='assets/skills/javascript.png' alt='' />
             </div>
@@ -64,6 +64,41 @@ const Skills = () => {
             </div>
             <div className='item'>
               <img src='assets/skills/mongodb.png' alt='' />
+            </div>
+          </OwlCarousel> */}
+          <OwlCarousel className='sliders' {...options.options}>
+            <div className='item'>
+              <h3>Javascript</h3>
+            </div>
+            <div className='item'>
+              <h3>ReactJS</h3>
+            </div>
+            <div className='item'>
+              <h3>VueJS</h3>
+            </div>
+            <div className='item'>
+              <h3>Html / (S)CSS</h3>
+            </div>
+            <div className='item'>
+              <h3>NodeJS</h3>
+            </div>
+            <div className='item'>
+              <h3>Express</h3>
+            </div>
+            <div className='item'>
+              <h3>Python</h3>
+            </div>
+            <div className='item'>
+              <h3>Php</h3>
+            </div>
+            <div className='item'>
+              <h3>Vuex</h3>
+            </div>
+            <div className='item'>
+              <h3>Redux</h3>
+            </div>
+            <div className='item'>
+              <h3>Mongodb</h3>
             </div>
           </OwlCarousel>
         </div>

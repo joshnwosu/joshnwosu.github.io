@@ -234,6 +234,12 @@ span.line {
   padding: 0 1em;
 }
 
+.skills .sliders {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
 .skills .item {
   /* border: 1px solid red; */
   display: flex;
@@ -243,6 +249,56 @@ span.line {
   height: 100px;
   padding: 0.5em;
   cursor: pointer;
+  background-color: var(--blend);
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.skills .item h3 {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #999;
+}
+
+.skills .item::after,
+.skills .item::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--red);
+  transition: all 300ms linear;
+}
+
+.skills .item::after {
+  top: 10px;
+  left: 10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.skills .item::before {
+  bottom: 10px;
+  right: 10px;
+  border-top: none;
+  border-left: none;
+}
+
+.skills .item:hover::before,
+.skills .item:hover::after {
+  width: 40px;
+  height: 40px;
+}
+
+.skills .item:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.skills .item:hover::before {
+  bottom: 0px;
+  right: 0px;
 }
 
 .skills .item img {
@@ -293,6 +349,16 @@ span.line {
 .about-text {
   width: 100%;
   padding: 2em 0 2em 2em;
+}
+
+.about-text h1 span:first-child {
+  font-size: 1.5em;
+}
+
+.about-text h1 span:last-child {
+  font-size: 0.7em !important;
+  color: var(--red);
+  margin-left: 1em;
 }
 
 .about-text p {

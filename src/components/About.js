@@ -18,8 +18,9 @@ const About = () => {
           </div>
           <div className='about-text'>
             <h1>
-              Hi there, <br />
-              I'm Joshua Nwosu.
+              <span>Hi there,</span>
+              <br />
+              <span>I'm Joshua Nwosu.</span>
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
