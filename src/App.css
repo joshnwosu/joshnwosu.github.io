@@ -396,11 +396,16 @@ span.line {
   .about {
     flex-direction: column;
   }
+  .about-cover {
+    margin-bottom: 2em;
+  }
   .about-text {
+    width: 100%;
     padding: 0 1em;
   }
   .about-text p {
     margin: 2em 0;
+    width: 100%;
   }
 }
 
